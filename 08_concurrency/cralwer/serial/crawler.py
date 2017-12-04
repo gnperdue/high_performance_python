@@ -1,3 +1,4 @@
+from __future__ import print_function
 import requests
 import string
 import random
@@ -18,6 +19,7 @@ def run_experiment(base_url, num_iter=500):
         response = requests.get(url)
         response_size += len(response.text)
     return response_size
+
 
 if __name__ == "__main__":
     import time
