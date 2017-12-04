@@ -2,7 +2,7 @@ from gevent import monkey
 monkey.patch_socket()
 
 import gevent
-from gevent.coros import Semaphore
+from gevent.lock import Semaphore
 import urllib2
 import string
 import random
